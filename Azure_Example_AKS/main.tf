@@ -18,7 +18,7 @@ resource "azurerm_resource_group" "aks_rg" {
 }
 
 resource "azurerm_container_registry" "aks_acr" {
-  name                = "myownacr2023"
+  name                = "myregistrymine123"
   resource_group_name = azurerm_resource_group.aks_rg.name
   location            = azurerm_resource_group.aks_rg.location
   sku                 = "Basic"
