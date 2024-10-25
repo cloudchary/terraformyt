@@ -1,4 +1,4 @@
-cluster_name        = "myownaks2023"
+cluster_name        = "myregistrymine123"
 kubernetes_version  = "1.24.10"
 location            = "westus2"
 node_resource_group = "nextops_node_rg01"
