@@ -38,7 +38,6 @@ resource "azurerm_kubernetes_cluster" "aks" {
     node_count          = var.system_node_count
     vm_size             = "Standard_DS2_v2"
     type                = "VirtualMachineScaleSets"
-    enable_auto_scaling = false
  }
 
   identity {
@@ -53,7 +52,6 @@ resource "azurerm_kubernetes_cluster" "aks" {
   network_profile {
     network_plugin     = var.network_plugin
     load_balancer_sku  = "standard"
-    docker_bridge_cidr = var.docker_bridge_cidr
     service_cidr       = var.service_cidr
     dns_service_ip     = var.dns_service_ip
   }
